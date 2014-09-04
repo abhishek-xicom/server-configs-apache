@@ -619,6 +619,7 @@ AddDefaultCharset utf-8
                                       "application/ld+json" \
                                       "application/manifest+json" \
                                       "application/rss+xml" \
+                                      "application/schema+json" \
                                       "application/vnd.geo+json" \
                                       "application/vnd.ms-fontobject" \
                                       "application/x-font-ttf" \
@@ -631,6 +632,7 @@ AddDefaultCharset utf-8
                                       "text/cache-manifest" \
                                       "text/css" \
                                       "text/html" \
+                                      "text/javascript" \
                                       "text/plain" \
                                       "text/vtt" \
                                       "text/x-component" \
@@ -684,6 +686,7 @@ FileETag None
   # Data interchange
     ExpiresByType application/json                      "access plus 0 seconds"
     ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
     ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
     ExpiresByType application/xml                       "access plus 0 seconds"
     ExpiresByType text/xml                              "access plus 0 seconds"
@@ -699,6 +702,7 @@ FileETag None
 
   # JavaScript
     ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
 
   # Manifest files
     ExpiresByType application/manifest+json             "access plus 1 year"
@@ -764,7 +768,7 @@ FileETag None
 #
 #     <FilesMatch "\.combined\.js$">
 #         Options +Includes
-#         AddOutputFilterByType INCLUDES application/javascript
+#         AddOutputFilterByType INCLUDES application/javascript text/javascript
 #         SetOutputFilter INCLUDES
 #     </FilesMatch>
 #
