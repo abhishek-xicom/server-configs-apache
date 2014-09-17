@@ -1,6 +1,11 @@
-### HEAD
+### 2.8.0 (September 13, 2014)
 
-* Add configs for files marked as `text/javascript`.
+* Improve configs for `.rdf` files
+  [[742d148](https://github.com/h5bp/server-configs-apache/commit/742d148ca497ef07a31d3bd648af29c129f4b62c)].
+* Add example on how to allow cross-origin access to the resource's
+  timing information
+  [[3df6768](https://github.com/h5bp/server-configs-apache/commit/3df6768e786b7595a656da1675b10c87e7ce18b9)].
+* Add configs for files marked as `text/javascript`
   [[db69327](https://github.com/h5bp/server-configs-apache/commit/db6932740a90a36cbbf8b38627fc034d595471c0)].
 * Add configs for JSON Schema files (`.json`)
   [[#39](https://github.com/h5bp/server-configs-apache/issues/39)].
